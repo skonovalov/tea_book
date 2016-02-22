@@ -1,0 +1,461 @@
+body
+	font-size 16px
+	font-family $rc
+	
+
+h1
+	font 40px/44px $rc
+	color #616161
+	letter-spacing 3px
+	font-weight 700
+	text-transform uppercase	
+
+h2 
+	font 36px/40px $rc
+	color #616161
+	letter-spacing 3px
+	font-weight 700
+	text-transform uppercase
+	
+h3 
+	font 24px/40px $rc
+	color #616161
+	letter-spacing 3px
+	font-weight 700
+	text-transform uppercase	
+	
+h4 
+	font 14px/20px $rc
+	color #BBB
+	letter-spacing 1px
+	font-weight 700
+	text-transform uppercase
+	
+p 
+	font 14px/20px $rc
+	color #cecece
+	font-weight 400		
+	
+a 
+	color #BBB 
+	text-decoration none 
+	transition all .5s ease 
+	
+	&:hover
+		color #616161		
+	
+.wrapper
+	max-width 1200px
+	width 100%
+	margin 0 auto
+	font-size 0
+	padding-bottom 50px
+	
+
+.content-left
+	display inline-block
+	vertical-align top
+	width 25%
+	
+.header-logo	
+	width 202px
+	height 164px
+	background #CCC 
+	margin-bottom 94px
+	
+	a 
+		font-size 20px
+		color #FFF
+		
+.menu
+	ul 
+		width 188px
+		
+		li 
+			position relative
+			margin-bottom 5px
+			
+			&:hover
+				&:before
+					opacity 1
+					visibility visible
+					left 0
+					top 0
+					width 100%
+					height 100%
+					
+				a 
+					color #FFF 
+					padding-left 10px
+					
+			
+			&:before
+				content ''
+				position absolute
+				top 10px
+				left -70px
+				width 20px
+				height 5px
+				opacity 0
+				visibility hidden
+				background #616161
+				transition opacity .5s ease, visibility .5s ease, width .5s ease, height .5s ease, top .5s ease, left .3s ease
+				
+				
+			a 
+				display block
+				width 100%
+				height 100%
+				font-family $rc 
+				font-size 18px
+				line-height 25px
+				color #BBB 	
+				font-weight 700 
+				text-transform uppercase
+				text-decoration none	
+				position relative
+				z-index 1
+				transition color .5s ease, padding .5s ease
+				
+		.current-menu-item
+			&:before
+				opacity 1
+				visibility visible
+				left 0
+				top 0
+				width 100%
+				height 100%
+					
+			a 
+				color #FFF 
+				padding-left 10px				
+	
+.content-right
+	display inline-block
+	vertical-align top
+	width 70%
+	margin-left 5%
+		
+
+.content-box		
+	width 100%
+	clearfix()
+	
+.box-left
+	display inline-block
+	vertical-align middle
+	
+.box-right
+	display inline-block
+	vertical-align middle
+	
+.horizont
+	display table
+	width 100%	
+	height 309px
+	background #333
+	
+.square
+	position relative
+	width 50%
+	display table-cell
+	vertical-align middle	
+	position relative
+	overflow hidden
+	
+	&:after
+		content ''
+		position absolute
+		top 0
+		left 0
+		width 100%
+		height 100%
+		background rgba(0, 0, 0, .5)
+		opacity 0
+		visibility hidden
+		transition opacity .5s ease, visibility .5s ease
+	
+	&:hover
+		&:after
+			opacity 1
+			visibility visible
+			
+		.square-inner
+			opacity 1
+			visibility visible	
+			transform scale(1)
+			
+
+.text 
+	&:after
+		opacity 1
+		visibility visible
+
+	.square-inner
+		opacity 1
+		visibility visible 
+		transform scale(1)
+		
+
+
+.square-inner	
+	position relative
+	opacity 0
+	visibility hidden
+	padding 34px
+	z-index 2
+	transform scale(1.4)
+	transition  transform .5s ease, opacity .5s ease, visibility .5s ease
+	
+	article
+		font-size 18px
+		line-height 1.2em 
+		color #FFF 
+		font-weight 700 
+		letter-spacing 2px 
+		text-transform uppercase
+		text-align center
+		padding-bottom 18px
+		margin-bottom 15px
+		position relative
+		
+		&:after
+			content ''
+			position absolute
+			bottom 0
+			left 40%
+			width 30px
+			height 3px
+			background #FFF 
+			
+	ul 
+		li 
+			position relative 
+			margin-bottom 5px 
+			
+			&:hover
+				
+				
+				&:after
+					opacity 1
+					visibility visible
+					background #FFF
+					transform scale(1)
+					
+				a 
+					font-weight 400 
+					color #616161	
+			
+			&:after
+				content ''
+				position absolute
+				top 0
+				left 0
+				z-index 1 
+				width 100%
+				height 100%
+				background rgba(255, 255, 255, .5) 
+				opacity 0
+				visibility hidden
+				transform scale(3)
+				transition transform .5s ease, visible .5s ease, opacity .5s ease, background .5s ease
+				
+			a 
+				position relative
+				z-index 3
+				display block
+				width 100%
+				height 100%
+				font-size 14px
+				line-height 22px
+				color #FFF 	
+				text-decoration none
+				text-transform uppercase
+				text-align center
+				
+	p 
+		font-size 18px
+		line-height 1.2em 
+		color #FFF 
+		font-weight 700 
+		letter-spacing 2px 
+		text-transform uppercase
+		text-align center
+		padding-bottom 18px
+		margin-bottom 15px			
+				
+						
+
+.white
+	background url(../images/white.jpg) no-repeat center center 
+	background-size cover
+	
+.yellow
+	background url(../images/yellow.jpg) no-repeat	center center 
+	background-size cover
+		 
+	
+.vert
+	width 100%	
+	min-height 618px
+	position relative
+	overflow hidden
+	display table 
+	
+	&:after
+		content ''
+		position absolute
+		top 0
+		left 0
+		width 100%
+		height 100%
+		background rgba(0, 0, 0, .5)
+		opacity 0
+		visibility hidden
+		transition opacity .5s ease, visibility .5s ease
+	
+	&:hover
+		&:after
+			opacity 1
+			visibility visible
+			
+		.vert-inner
+			opacity 1
+			visibility visible	
+			transform scale(1)
+
+.vert-inner	
+	display table-cell
+	vertical-align middle
+	position relative
+	opacity 0
+	visibility hidden
+	padding 34px
+	z-index 2
+	transform scale(1.4)
+	transition  transform .5s ease, opacity .5s ease, visibility .5s ease
+	
+	article
+		font-size 18px
+		line-height 1.2em 
+		color #FFF 
+		font-weight 700 
+		letter-spacing 2px 
+		text-transform uppercase
+		text-align center
+		padding-bottom 18px
+		margin-bottom 15px
+		position relative
+		
+		&:after
+			content ''
+			position absolute
+			bottom 0
+			left 40%
+			width 30px
+			height 3px
+			background #FFF 
+			
+	ol, ul 
+		list-style-type decimal
+		counter-reset list
+		
+		li 
+			position relative 
+			margin-bottom 5px 
+			
+			&:before
+				content "0"counter(list)"." 
+				counter-increment list
+				position absolute
+				top 0
+				left 0
+				z-index 2
+				font-family 'Roboto Condensed', sans-serif
+				font-size 14px
+				line-height 22px
+				color #FFF 
+				font-weight 700 
+				transition color .3s ease
+    			
+			
+			&:hover
+				&:before
+					color #616161
+					
+				&:after
+					opacity 1
+					visibility visible
+					background #FFF
+					transform scale(1)
+					
+				a 
+					font-weight 400 
+					color #616161	
+			
+			&:after
+				content ''
+				position absolute
+				top 0
+				left 0
+				z-index 1 
+				width 100%
+				height 100%
+				background rgba(255, 255, 255, .5) 
+				opacity 0
+				visibility hidden
+				transform scale(3)
+				transition transform .5s ease, visible .5s ease, opacity .5s ease, background .5s ease
+				
+			a 
+				position relative
+				z-index 3
+				display block
+				width 100%
+				height 100%
+				padding-left 30px
+				font-size 14px
+				line-height 22px
+				color #FFF 	
+				text-decoration none
+				text-transform uppercase
+				
+		
+	ul 
+		li 
+			&:before
+				content none	
+				
+			a 
+				padding-left 0
+				text-align center			
+	
+.rate 
+	background url(../images/rate.jpg) no-repeat	center center 
+	background-size cover
+
+.span1
+	width 66.666%	
+	
+.span2
+	width 33.333%	
+	
+.text 
+	background url(http://indigo-21.com/wp-content/uploads/2015/12/0c4104603adec67fa24fe1f99dc65d28.jpg) no-repeat center center
+	background-size cover 		
+	
+.green
+	background url(../images/green.jpg) no-repeat	center center 
+	background-size cover	
+	
+.black
+	background url(../images/black.jpg) no-repeat	center center 
+	background-size cover	
+	
+.oolong
+	background url(../images/ulun.jpg) no-repeat	center center 
+	background-size cover	
+	
+.red
+	background url(../images/red.jpg) no-repeat	center center 
+	background-size cover				

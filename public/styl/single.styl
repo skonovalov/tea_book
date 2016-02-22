@@ -1,0 +1,98 @@
+.single-top 
+	font-size 0
+	padding-bottom 25px
+	margin-bottom 25px
+	border-bottom 1px solid #cecece 
+	
+.single-photo
+	display inline-block
+	vertical-align top
+	width 30%
+	margin-right 10%
+	margin-bottom 10px
+	position relative
+	
+	img 
+		max-width 100%
+		min-height 100%
+		border 1px solid #cecece
+		
+	&:after
+		content ''
+		position absolute
+		top 0
+		left 0
+		width 100%
+		height 100%
+		background rgba(#000, .5)
+		opacity 0
+		visibility hidden
+		cursor pointer
+		transition opacity .5s ease, visibility .5s ease
+		
+	&:hover
+		&:after
+			opacity 1
+			visibility visible	 
+			
+.single-photo-wrap
+	width 30%
+	margin-right 10%
+	
+	ul 
+		font-size 0 
+		
+		li 
+			display inline-block
+			vertical-align top 
+			width 30%
+			margin-right 5%
+			max-height 77px
+			overflow hidden
+			
+			&:last-child
+				margin-right 0 
+				
+			a 	
+				display block
+				width 100%
+				height 100%
+				
+			img 
+				max-width 100%
+				min-height 100%	
+				border 1px solid #cecece
+				
+
+							
+	
+.single-short
+	display inline-block
+	vertical-align top 
+	width 50%		
+	
+	ul 
+		li 
+			margin-bottom 10px
+			font 14px/20px $rc
+			color #cecece
+			font-weight 400
+			
+			em 
+				display inline-block
+				vertical-align top 
+				width 40%
+				margin-right 5%
+				font-weight 500 
+				color #616161
+				
+				
+			span 
+				display inline-block
+				vertical-align top 
+				width 55%
+				
+.single-text
+	padding 25px 0
+	padding-top 0
+						

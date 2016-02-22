@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'fregat';
+    src: url('../fonts/Fregat_regular.eot');
+    src: url('../fonts/Fregat_regular.eot?#iefix') format('embedded-opentype'), 
+         url('../fonts/Fregat_regular.woff') format('woff'),
+	     url('../fonts/Fregat_regular.ttf') format('truetype'),
+         url('../fonts/Fregat_regular.otf') format('opentype'); 
+}
+
+@font-face {
+    font-family: 'fregat_bold';
+    src: url('../fonts/Fregat_bold.eot');
+    src: url('../fonts/Fregat_bold.eot?#iefix') format('embedded-opentype'), 
+         url('../fonts/Fregat_bold.woff') format('woff'),
+         url('../fonts/Fregat_bold.ttf') format('truetype'),
+         url('../fonts/Fregat_bold.otf') format('opentype'); 
+}
+
+@font-face {
+    font-family: 'fregat_italic';
+    src: url('../fonts/Fregat_italic.eot');
+    src: url('../fonts/Fregat_italic.eot?#iefix') format('embedded-opentype'), 
+         url('../fonts/Fregat_italic.woff') format('woff'),
+         url('../fonts/Fregat_italic.ttf') format('truetype'),
+         url('../fonts/Fregat_italic.otf') format('opentype'); 
+}
+
+
+@font-face {
+    font-family: 'myriad';
+    src: url('../fonts/myriad.eot');
+    src: url('../fonts/myriad.eot?#iefix') format('embedded-opentype'), 
+         url('../fonts/myriad.woff') format('woff'),
+         url('../fonts/myriad.ttf') format('truetype'),
+         url('../fonts/myriad.otf') format('opentype'); 
+}
+
+@font-face {
+    font-family: 'myriad_bold';
+    src: url('../fonts/myriad_bold.eot');
+    src: url('../fonts/myriad_bold.eot?#iefix') format('embedded-opentype'), 
+         url('../fonts/myriad_bold.woff') format('woff'),
+         url('../fonts/myriad_bold.ttf') format('truetype'),
+         url('../fonts/myriad_bold.otf') format('opentype'); 
+}
