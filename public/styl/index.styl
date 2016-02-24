@@ -7,6 +7,15 @@ body
 	font-family $u
 	font-weight 300 
 	
+h3
+	letter-spacing 6px
+	color #485154
+	font-family $u
+	font-size 20px
+	line-height 26px
+	font-weight 300 
+	text-transform uppercase
+	
 .wrapper
 	min-height 100%
 	width 100%
@@ -27,8 +36,30 @@ body
 		background url(../images/bg.jpg) no-repeat center center
 		background-size cover		
 		
+	header 
+		display none
+		position absolute
+		top 2.5%
+		left 2.5%
+		z-index 2
+		width 95%
+		height 95%
+		padding-top 0
+		background #FFF 
+		
+	.logo 
+		display none 	
+		
 	footer
 		position absolute
+		width 95%
+		left 2.5%
+		bottom 2.5%
+		border-top none
+		
+	.footer-copy
+		color #FFF	
+		padding-top 20px
 		
 #page
 	height 100%
@@ -42,7 +73,32 @@ body
 	left 2.5%
 	width 95%
 	height 95% 	
-	background rgba(#a6acae, .3)	
+	background rgba(#a6acae, .3)
+	
+.hamb
+	position absolute
+	top 5%
+	left 50%
+	z-index 10
+	width 25px
+	height 15px
+	cursor pointer
+	
+	ul 
+		li 
+			width 100%
+			height 3px
+			border-radius 3px 
+			background #FFF 
+			margin-bottom 3px
+			
+			&:last-child
+				margin-bottom 0
+		
+	
+.main-inner
+	position relative
+	top 40%	
 	
 .main-text
 	h1
@@ -72,6 +128,7 @@ body
 	margin 0 auto
 	background url(../images/navigation.jpg) no-repeat center center
 	background-size cover
+	margin-bottom 73px
 	
 	ul 
 		max-width 1200px
@@ -116,6 +173,7 @@ footer
 	border-top 1px solid #B8BDBF 
 			
 .footer-copy
+	font-family $u 
 	font-size 12px
 	line-height 18px
 	color #B8BDBF	
