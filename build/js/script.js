@@ -14,6 +14,7 @@ function preparePage() {
 
     if($('.filter-cats')) {
         lightBox();
+        easyTabs();
     }
 }
 
@@ -62,6 +63,10 @@ function lightBox() {
       'resizeDuration': 200,
       'wrapAround': true
     });
+}
+
+function easyTabs() {
+    $('#tab-container').easytabs();
 }
 
 

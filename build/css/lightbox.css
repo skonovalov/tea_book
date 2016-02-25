@@ -34,7 +34,7 @@ body.lb-disable-scrolling {
   display: block;
   height: auto;
   max-width: inherit;
-  border-radius: 3px;
+  /*border-radius: 3px;*/
 }
 
 .lightbox a img {
@@ -43,12 +43,12 @@ body.lb-disable-scrolling {
 
 .lb-outerContainer {
   position: relative;
-  background-color: white;
+  /*background-color: white;*/
   *zoom: 1;
   width: 250px;
   height: 250px;
   margin: 0 auto;
-  border-radius: 4px;
+  /*border-radius: 4px;*/
 }
 
 .lb-outerContainer:after {
@@ -103,7 +103,7 @@ body.lb-disable-scrolling {
   display: block;
 }
 
-.lb-nav a.lb-prev {
+/* .lb-nav a.lb-prev {
   width: 34%;
   left: 0;
   float: left;
@@ -137,7 +137,7 @@ body.lb-disable-scrolling {
 .lb-nav a.lb-next:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
-}
+} */
 
 .lb-dataContainer {
   margin: 0 auto;
