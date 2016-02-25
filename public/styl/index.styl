@@ -37,18 +37,53 @@ h3
 		background-size cover		
 		
 	header 
-		display none
+		//display none
 		position absolute
 		top 2.5%
 		left 2.5%
-		z-index 2
+		z-index 15
 		width 95%
 		height 95%
 		padding-top 0
 		background #FFF 
+		opacity 0
+		visibility hidden
+		transition opacity .3s ease, visibility .3s ease
 		
 	.logo 
 		display none 	
+		
+	.menu 
+		display block
+		margin 0 auto 
+		margin-top 300px 
+		width 70%
+		opacity 0
+		visibility hidden
+		transform translate(0, -300px)
+		transition opacity .6s ease, visibility .6s ease, transform 1s ease
+		
+		ul 
+			float none
+			width 53%
+			border-right 1px solid #e0e4e5
+			padding-top 0
+			
+			li 
+				 display block
+				 
+				 a 
+					font-size 40px 
+					line-height 1.2em 
+					
+				&:last-child
+					padding-bottom 0	
+					
+	.menuFadeIn
+		opacity 1
+		visibility visible	
+		transform translate(0, 0)			
+				 	
 		
 	footer
 		position absolute
@@ -60,6 +95,21 @@ h3
 	.footer-copy
 		color #FFF	
 		padding-top 20px
+		
+	.open-menu
+		//display block	
+		opacity 1
+		visibility visible
+		
+
+		
+.icon-close
+	display inline-block
+	position absolute
+	top 3.5%
+	left 49%
+	cursor pointer
+		
 		
 #page
 	height 100%

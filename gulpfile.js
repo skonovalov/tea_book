@@ -28,6 +28,7 @@ gulp.task('css', function() {
                    './public/css/animation.css',
                    './public/css/fontello-codes.css',
                    './public/css/fontello-embedded.css',
+                   './public/css/sprite.css',
                    './public/css/fontello.css',
                    './public/css/index.css',
                    './public/css/tea.css'
