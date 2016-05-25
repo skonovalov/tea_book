@@ -37,6 +37,8 @@ function openMenu() {
     
 }
 
+/* close menu on main page*/
+
 function closeMain() {
     var btn, menu;
 
@@ -58,11 +60,7 @@ function closeMain() {
 
 
 function lightBox() {
-    lightbox.option({
-      'positionFromTop': 130,
-      'resizeDuration': 200,
-      'wrapAround': true
-    });
+    $(".fancybox").fancybox();
 }
 
 function easyTabs() {

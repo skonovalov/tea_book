@@ -57,7 +57,7 @@ gulp.task('sprite', function() {
 
 gulp.task('watch', function() {
 	gulp.watch('./public/styl/*.styl', ['style']);
-	gulp.watch('./public/css/*.css', ['css'/*, 'minify-css'*/]);
+	gulp.watch('./public/css/*.css', ['css', 'minify-css']);
 });
 
 

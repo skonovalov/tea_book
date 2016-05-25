@@ -4,14 +4,14 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,500,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="../css/lightbox.css">
+	<link rel="stylesheet" href="../css/jquery.fancybox.css">
 	<link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 <div id="page">
 	<div class="wrapper">
 		<header>
-			<section class="header">
+			<section class="header container">
 				<div class="logo">
 					<a href="">
 						<span>Энциклопедия чая</span>
@@ -36,7 +36,7 @@
 				</ul>
 			</section>
 
-			<div id="tab-container">
+			<div id="tab-container" class="container">
 				<ul>
 					<li><a href="#white-tea">Белый чай</a></li>
 					<li><a href="#yellow-tea">Желтый чай</a></li>
@@ -47,21 +47,20 @@
 				</ul>
 				<div id="white-tea" class="white-tea">
 					<div class="tea-item">
-							<div class="tea-item-img">
-								<img src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Bai_Hao_Yin_Zhen_tea_leaf_%28Fuding%29.jpg" alt="tea">
-								<div class="tea-item-overlay">
-									<div class="tea-item-links">
-										<a href="https://upload.wikimedia.org/wikipedia/commons/a/ae/Bai_Hao_Yin_Zhen_tea_leaf_%28Fuding%29.jpg" data-lightbox="image-1" class="icon-search"></a>
-										<a href="#" class="icon-link"></a>
-									</div>
+						<div class="tea-item-img">
+							<img src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Bai_Hao_Yin_Zhen_tea_leaf_%28Fuding%29.jpg" alt="tea">
+							<div class="tea-item-overlay">
+								<div class="tea-item-links">
+									<a href="https://upload.wikimedia.org/wikipedia/commons/a/ae/Bai_Hao_Yin_Zhen_tea_leaf_%28Fuding%29.jpg" rel="image-1" class="icon-search fancybox"></a>
 								</div>
 							</div>
-							<div class="tea-item-text">
-								<a href="#">
-									<h3>Бай Хао Инь Чжень</h3>
-								</a>
-								<p>Байха́о Иньчжэ́нь (буквально: «серебряные иглы с белым ворсом») — чай, произведенный в китайской провинции Фуцзянь. </p>
-							</div>
+						</div>
+						<div class="tea-item-text">
+							<a href="#">
+								<h3>Бай Хао Инь Чжень</h3>
+							</a>
+							<p>Байха́о Иньчжэ́нь (буквально: «серебряные иглы с белым ворсом») — чай, произведенный в китайской провинции Фуцзянь. </p>
+						</div>
 					</div>
 				</div>
 				<div id="yellow-tea" class="yellow-tea">
@@ -70,8 +69,7 @@
 							<img src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Bai_Hao_Yin_Zhen_tea_leaf_%28Fuding%29.jpg" alt="tea">
 							<div class="tea-item-overlay">
 								<div class="tea-item-links">
-									<a href="https://upload.wikimedia.org/wikipedia/commons/a/ae/Bai_Hao_Yin_Zhen_tea_leaf_%28Fuding%29.jpg" data-lightbox="image-2" class="icon-search"></a>
-									<a href="#" class="icon-link"></a>
+									<a href="https://upload.wikimedia.org/wikipedia/commons/a/ae/Bai_Hao_Yin_Zhen_tea_leaf_%28Fuding%29.jpg" rel="image-2" class="icon-search fancybox"></a>
 								</div>
 							</div>
 						</div>
@@ -95,7 +93,7 @@
 	</footer>
 </div>
 <script src="http://yastatic.net/jquery/1.9.0/jquery.min.js"></script>
-<script src="../js/lightbox.js"></script>	
+<script src="../js/jquery.fancybox.js"></script>	
 <script src="../js/jquery.easytabs.js"></script>
 <script src="../js/script.js"></script>	
 </body>
